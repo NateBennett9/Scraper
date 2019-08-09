@@ -17,7 +17,9 @@ app.set("view engine", "handlebars");
 
 app.use(routes);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://user1:password1@ds359077.mlab.com:59077/heroku_j38p0qjf";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
+/* var MONGODB_URI = process.env.MONGODB_URI || "mongodb://user1:password1@ds359077.mlab.com:59077/heroku_j38p0qjf"; */
 
 mongoose.connect(MONGODB_URI);
 
